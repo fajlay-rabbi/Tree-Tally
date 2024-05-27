@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/green"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="25dp"
+        android:text="Welcome to Tree Tally"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create free account"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/AppTheme.TextInputEditText"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/AppTheme.TextInputEditText"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/AppTheme.TextInputEditText"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/AppTheme.TextInputEditText"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/uploadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/small_rounded">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:text="Upload image here"/>
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Address"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/AppTheme.TextInputEditText"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Sign up now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/green_round"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? "
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Login"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/green"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

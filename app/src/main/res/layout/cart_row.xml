@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/semiwhite"
+    android:layout_height="80dp">
+
+
+    <ImageView
+        android:id="@+id/cart_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plant" />
+
+
+    <LinearLayout
+        android:id="@+id/cart_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/cart_image"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Cart name for"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="৳ 200"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+
+        <ImageButton
+            android:id="@+id/cart_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/full_round"
+            android:backgroundTint="@color/green"
+            android:elevation="10dp"
+            android:src="@drawable/plus" />
+
+
+        <TextView
+            android:id="@+id/cart_quan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/search_box"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+
+        <ImageButton
+            android:id="@+id/cart_remove"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/full_round"
+            android:src="@drawable/minus"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:elevation="5dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/cart_remove"-->
+<!--                android:layout_width="22dp"-->
+<!--                android:layout_height="22dp"-->
+<!--                android:src="@drawable/close"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginLeft="50dp"/>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--        <ImageButton-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:background="@drawable/full_round"-->
+<!--            android:src="@drawable/minus"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:elevation="5dp"/>-->
+<!--        -->
+<!--        <TextView-->
+<!--            android:id="@+id/cart_quan"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="1"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="25sp"-->
+<!--            android:layout_marginLeft="10dp"/>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

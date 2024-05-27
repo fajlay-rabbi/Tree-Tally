@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login_Activity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/green"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="25dp"
+        android:text="Welcome to Tree Tally"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In to Continue"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="35dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/AppTheme.TextInputEditText"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="@style/AppTheme.TextInputEditText"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Sign In now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/green_round"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Create Account"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/green"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

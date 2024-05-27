@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CartFag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: ৳ 00"
+            android:textSize="22sp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cart_checkout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:textSize="17sp"
+            android:padding="13dp"
+            android:textColor="@color/white"
+            android:background="@drawable/search_box"
+            android:backgroundTint="@color/green"
+            android:textAllCaps="false"
+            android:layout_marginLeft="120dp"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/cart_listview"
+            android:dividerHeight="4dp"
+            android:divider="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/cart_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Your cart is empty"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

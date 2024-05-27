@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFrag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:text="Find your favorite plants" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Search here..."
+        android:paddingLeft="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/search_box"/>
+
+    <LinearLayout
+        android:id="@+id/welcome_section"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:elevation="6dp"
+        android:background="@drawable/new_green_small_round"
+        android:orientation="horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="180dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/pot"
+            android:layout_height="match_parent"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginRight="8dp"
+            android:gravity="fill"
+            android:text="Discover the secret to creating a lush, sanctuary right within your living space with our touch of greenery."
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/all_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/full_round"
+            android:backgroundTint="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/indoor_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indoor"
+            android:textColor="@color/black"
+            android:backgroundTint="#F3F3F3"
+            android:elevation="3dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/full_round"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/outdoor_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outdoor"
+            android:textColor="@color/black"
+            android:backgroundTint="#F3F3F3"
+            android:elevation="3dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/full_round"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/garden_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garden"
+            android:textColor="@color/black"
+            android:backgroundTint="#F3F3F3"
+            android:elevation="3dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/full_round"/>
+    </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/shimmer_view_container">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <include layout="@layout/shimmer_plant_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            >
+
+                        </include>
+
+                        <include layout="@layout/shimmer_plant_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            >
+
+                        </include>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <include layout="@layout/shimmer_plant_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            >
+
+                        </include>
+
+                        <include layout="@layout/shimmer_plant_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            >
+
+                        </include>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <include layout="@layout/shimmer_plant_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            >
+
+                        </include>
+
+                        <include layout="@layout/shimmer_plant_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            >
+
+                        </include>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/plant_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    android:scrollbars="vertical"
+                    />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

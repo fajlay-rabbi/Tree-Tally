@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WishlistFag">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="18dp"
+        android:text="Your Wishlist"/>
+
+
+    <ListView
+        android:id="@+id/wish_listview"
+        android:dividerHeight="4dp"
+        android:divider="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="#ffffff" />
+
+
+
+       <com.facebook.shimmer.ShimmerFrameLayout
+           android:id="@+id/wish_shimmer_view_container"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <include layout="@layout/shimmer_wishlist_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp">
+
+
+               </include>
+
+
+           </LinearLayout>
+       </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/wish_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are not logged in"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wish_login"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green_high_round"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
